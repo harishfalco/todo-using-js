@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+  }
+body{
+    background-color: #E0E0E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+}
+.card{
+    /* outline */
+    width: 400px;
+    height: 300px;
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    /* box shadow */
+    -webkit-box-shadow: 9px 8px 9px -6px rgba(115,113,115,1);
+    -moz-box-shadow: 9px 8px 9px -6px rgba(115,113,115,1);
+    box-shadow: 9px 8px 9px -6px rgba(115,113,115,1);
+
+    /* display */
+    display: flex;
+    flex-direction: column;
+}
+
+.textbox i{
+    position: absolute;
+}
+.textfeild{
+    margin: 10px;
+    padding: 25px 35px;
+    height: 10px;
+    width: 380px;
+    background-color:#EEEEEE ;
+    outline: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+}
+.icon{
+    margin:12px ;
+    padding: 15px;
+}
+.clear-completed-all-tasks{
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.5;
+}
+.btn{
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 3px 25px;
+}
+.task{
+    display:flex;
+    flex-direction: row;
+    position: absolute;
+    padding: 10px;
+}
+.task p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.checkbox-round {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid grey;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    padding:0px 5px;
+}
+
+.checkbox-round:checked {
+    background-color:blue;
+}
+
+.del-icon{
+    display: none !important;
+}
+
+.checkbox-round:hover + .del-icon{
+    display: block !important;
+    margin-left: 250px;
+    cursor: pointer;
+}
