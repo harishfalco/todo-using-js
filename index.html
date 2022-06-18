@@ -29,10 +29,10 @@
             <div class="clear-completed-all-tasks">
                     <div class="complete-all-tasks">
                         <i class="fa fa-check " aria-hidden="true" style="padding:0px 10px;opacity: 0.5;"></i>
-                        <button class="btn">complete all tasks</button>
+                        <button class="btn" onclick="completeAllTask()">complete all tasks</button>
                        
                     </div>
-                    <button class="btn">clear completed</button>
+                    <button class="btn" onclick="clearCompletedTask()">clear completed</button>
             </div>
         </div>
 
@@ -40,13 +40,16 @@
 
    
         <div class="tasklist">
-            <div class="task">
-                <p class="item"> <input type="checkbox" class="checkbox-round" /> eat well  <i class="fa fa-remove del-icon"></i> </p>
-               
-            </div>
+            <ul class="tasklist_ul">
+           </ul>
         </div>
         <div class="additional-options">
-            <!-- no. of tasks , all,completed and uncomepleted -->
+            <p class="no-of-tasks"> 0 tasks</p>
+            <div class="status">
+                <button class="all" onclick="displayTodoItems()" >All</button>
+                <button class="completed" onclick="completedTask()">completed</button>
+                 <button class="uncompleted" onclick="unCompletedTask()" >uncompleted</button>
+            </div>
         </div>
     </div>
 
